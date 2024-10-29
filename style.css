@@ -1,0 +1,47 @@
+#gameboard {
+  width: 320px;
+  height: 320px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  height: 40px;
+  width: 40px;
+  position: relative; /*but why? she did it when setting up the function dragDrop*/
+}
+
+.square svg {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  position: relative; /*but why? she did it when setting up the function dragDrop*/
+  z-index: -9;
+}
+
+path {
+  position: relative; /*but why? she did it when setting up the function dragDrop*/
+  z-index: -10;
+}
+
+.piece {
+  position: relative; /*but why? she did it when setting up the function dragDrop. this is bc when we hover the piece shows first not the square. will be interacting with the piece and dropping into the square*/
+  z-index: 9;
+}
+
+.beige {
+  background-color: rgb(110, 110, 98);
+}
+
+.brown {
+  background-color: rgb(165, 42, 42);
+}
+
+.black {
+  fill: rgb(28, 28, 28);
+}
+
+.white {
+  fill: rgb(255, 255, 255);
+}
+
